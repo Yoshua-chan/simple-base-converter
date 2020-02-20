@@ -16,9 +16,9 @@ int main(int argc, char* argv[])
     x = toDecimal(argv[3], input);
 
     if(output != 10)
-        std::cout<<convert(x, output);
+        std::cout<<convert(x, output)<<std::endl;
     else
-        std::cout<<x;
+        std::cout<<x<<std::endl;
     
     return 0;
 }
