@@ -1,5 +1,5 @@
 #define elif else if
-
+#include <algorithm>
 int toDecimal(std::string number, int base)
 {
     if(base == 1 || base > 36)
@@ -7,6 +7,9 @@ int toDecimal(std::string number, int base)
         std::cout<<"Arguments must be between 2 and 36";
         exit(1);
     }
+
+    std::transform(number.begin(), number.end(), number.begin(), toupper);
+
     int cypher=0;
     int digit=0; 
     int k = number.size() - 1;
