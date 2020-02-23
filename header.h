@@ -47,7 +47,6 @@ std::string convert(int number, int base)
         std::cout<<"Arguments must be between 2 and 36";
         exit(1);
     }
-    std::cout<<"convert";
     std::string s_number;
     std::string output;
     int mod;
